@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animaciones, etiqueta Canva y Bootstrap</title>
+    <!--Link Bootstrap V5.2.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  	<div class="spinner-border text-light" role="status">
+  		<span class="visually-hidden">Loading...</span>
+	</div>
+  	<div class="fondo">
+  	<!--Sección de animaciones-->
+  	<div class="animado"><!--Etiqueta canva-->
+      <canvas id="myCanvas" width="200" height="100" >Tu navegador no soporta canvas</canvas></div>
+  	     <p>Esta página web es basada solo a animaciones, hay un botón que hacer que se mueva un cuadro que ha sido creado con la etiqueta <b>SVG</b>, el cual fue integrado con una funcion de javascript, hay un borde que cambia de color en el titulo de la página <b>"ANIMACIÓN"</b>, fue echo con la etiqueta canvas de html. Afuera hay unos loadings-Items que tienen animación al pasar sobre ellos.</p>
+  		<br>
+  		<button type="button" class="btn btn-primary" onclick="mover()">Mover</button><br>
+    	<!--Etiqueta SVG-->
+      <svg id="animacion">
+      <rect x="50" y="20" rx="20" ry="20" width="150" height="150"/>
+      Tu navegador no soporta etiqueta SVG. </svg><br><br><br><br><br>
+    </div>
+		<!--Link código javascript-->  
+    	<script src="js/script.js"></script>
+  </body>
+</html>

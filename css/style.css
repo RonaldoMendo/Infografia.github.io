@@ -1,0 +1,87 @@
+/*Sección de animación*/
+body{
+	background: gray;
+	margin-top:80px ;
+}
+.fondo{
+	background: white;
+	width: 80%;
+	border-radius: 50px;
+	display: block;
+	margin: 0 auto;
+}
+
+.animado{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	border: 8px solid;
+	animation-name: cambio;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+@keyframes cambio{
+	20% {border-color:#bde6c7;}
+  	40% {border-color: #b4d1bb;}
+  	60% {border-color: #ced1b4;}
+  	80% {border-color: #F4e8c5;}
+  	100% {border-color:	#c5cae8;}
+}
+
+.fondo p{
+	margin: 10px 15px 0px 15px;
+}
+#animacion{
+	display: block;
+	margin: 0 auto;
+}
+.btn{
+	display: block;
+	margin: 0 auto;
+}
+
+/*Debe de actuar al momento de dar click al botón*/
+#animacion {
+  width: 400px;
+  height: 180px;
+  position: relative;
+  animation: mymove 1s infinite;
+}
+@keyframes mymove {
+  from {left: 0px;}
+}
+@keyframes mynewmove {
+    0%   {top: 0px; left: 0px; }
+  25%  {top: 0px; left: 100px; }
+  50%  {top: 100px; left: 100px;}
+  75%  {top: 100px; left: 0px; }
+  100% {top: 0px; left: 0px; }
+}
+
+/*Codigo bootstrap*/
+.spinner-border{
+	position: fixed;
+	margin-left:50px;
+}
+.spinner-border:hover{
+	font-size: 50px;
+}
+.botones button{
+	background: white;
+}
+
+/*Etiqueta canvas*/
+canvas{
+	display: block;
+	margin: 10px 50px 10px 180px ;
+}
+/*Etiqueta SVG*/
+SVG{
+	display: block;
+	margin: 0 auto;
+	fill:green;
+	stroke:black;
+	stroke-width:5;
+	opacity:0.5;
+}
